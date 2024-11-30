@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+/* Apply the custom font to all elements */
+* {
+    font-family: 'Readex Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background styling */
+body {
+    background: linear-gradient(135deg, #1c1c1c, #3b3b3b); /* Dark grey gradient */
+    color: white; /* Ensure text is readable on the dark background */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Styling for anchor links */
+a {
+    text-decoration: purple;
+    color: white !important;
+    font-weight: 500;
+}
+
+a:hover {
+    color: gold !important; /* Gold accent on hover */
+    text-decoration: gold;
+}
+
+/* Remove list item markers */
+ul {
+    list-style-type: none;
+}
+
+/* Styling for horizontal rules */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ffd700; /* Gold color for separators */
+    margin-top: 0;
+    margin-bottom: 5%;
+    opacity: 0.8; /* Slightly transparent for subtle effect */
+}
+
+/* Additional utility styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid #ddd; /* Adds a border to distinguish the section */
+    border-radius: 1px; /* Gives the section rounded corners */
+    background-color: black; /* Background color */
+    color: white; /* Text color for contrast */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Button styling */
+button {
+    background-color: #ffd700; /* Gold color */
+    color: #1c1c1c; /* Dark grey text for contrast */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffcc00; /* Brighter gold on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Styling for vertical lines */
+.vertical-line {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: white;
+    z-index: 1; /* Ensure it's always in the background */
+}
+
+.vertical-line.left {
+    left: 150px; /* Adjust to your desired left position */
+}
+
+.vertical-line.right {
+    right: 150px; /* Adjust to your desired right position */
+}
+
+/* Styling for the horizontal line above profile.png */
+.horizontal-line {
+    width: 100%; /* Adjust as needed for width */
+    height: 2px;
+    background-color: white;
+    margin: 50px auto; /* Center horizontally */
+    z-index: 1;
+}
+
+
+/* Profile section */
+.profile-section {
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Ensure it's above the lines */
+    margin-top: 40px;
+}
+
+.profile-section img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; /* Optional for circular profile images */
+}
+.tab {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.tab button {
+    background-color: #3b3b3b;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.tab button:hover {
+    background-color: #ddd;
+    color: black;
+}
+.project {
+    margin-bottom: 100px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Add other CSS styles here... */
+.center-text {
+    text-align: center;
+}
+.tab button.active {
+    background-color: #ddd;
+    color: black;
+    font-weight: bold;
+}
+
+.creative-outreach-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid #ddd; /* Slightly darker border for subtle variation */
+    border-radius: 15px; /* Matches the rounded corners */
+    background-color: #000000; /* Slightly lighter background for distinction */
+    color: white; /* Ensures text is readable */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+}

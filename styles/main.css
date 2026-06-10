@@ -208,9 +208,22 @@ h3 {
 
 .hero-pitch {
     width: min(760px, 100%);
-    margin: 0 auto 1.4rem;
+    margin: 0 auto 0.8rem;
     color: #ecfffb;
     font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+}
+
+.selected-outcomes {
+    width: min(820px, 100%);
+    margin: 0 auto 1.4rem;
+    color: #cffff8;
+    font-size: 0.98rem;
+    font-weight: 700;
+}
+
+.selected-outcomes strong {
+    color: var(--gold);
+    font-weight: 900;
 }
 
 .credential-strip {

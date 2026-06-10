@@ -3,445 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Farrell Kimble">
-    <title>✨Farrell Kimble's Portfolio</title>
+    <meta name="description" content="Farrell Kimble portfolio for data analytics, healthcare operations analytics, product strategy, and decision-support systems.">
+    <title>Farrell Kimble | Data Analytics Portfolio</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="icon" href="favicon.ico">
-    <style>
-    
-        
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        h1, h2, h3, p, ul {
-            margin: 10px 0;
-        }
-        .hero-container, .social-links, section {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-        .hero-content {
-            text-align: center;
-        }
-        .hero-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .download-button {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 8px 12px;
-            border: 1px solid #000;
-            border-radius: 4px;
-            background-color: #3b3b3b;
-            color: black;
-            text-decoration: none;
-        }
-        .download-button:hover {
-            background-color: #181515;
-        }
-        .social-links a {
-            margin-right: 15px;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-        article {
-            margin-bottom: 20px;
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-        section ul {
-            list-style: none;
-            padding: 0;
-        }
-        section ul li {
-            margin-bottom: 10px;
-        }
-        .social-links {
-    text-align: center;
-    margin-bottom: 20px;
-}
-.social-links a {
-    margin: 0 10px; /* Adjust space between links */
-    display: inline-block;
-    text-decoration: none;
-    color: #000; /* Optional: change color as needed */
-}
-section {
-    text-align: center;
-    margin: 40px 0; /* Adjust spacing between sections */
-}
-
-section h2 {
-    margin-bottom: 20px; /* Adds space below the section title */
-}
-
-section ul {
-    display: inline-block;
-    text-align: left; /* Align list items to the left within the centered block */
-    max-width: 800px; /* Limit the width of the content */
-} 
-section ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-section ul li {
-    margin-bottom: 10px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-section ul li::before,
-section ul li::after {
-    content: attr(data-emoji);
-    margin: 0 10px;
-    display: inline-block;
-}
-body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .tab {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-        .tab button {
-            background-color: #3b3b3b;
-            color: white;
-            padding: 10px 20px;
-            border: 1px solid #000;
-            border-radius: 4px;
-            margin: 0 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .tab button:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .tabcontent.active {
-            display: block;
-        }
-        .hero-container, .social-links, section {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-
-    </style>
-
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Farrell Kimble's Digital Resume</h1>
-        </header>
-        <!-- Navigation Tabs -->
-        <div class="tab">
-            <button class="tablinks active" onclick="showSection('overview')">Overview</button>
-            <button class="tablinks" onclick="showSection('creative-works')">Creative Works</button>
-            <button class="tablinks" onclick="showSection('outreach')">Outreach</button>
-        </div>
-      
-        <!-- Overview Section -->
-        <section id="overview" class="content-section">
-            <h2>Overview</h2>
-            <header class="hero-container">
-                <div class="hero-image">
-                    <img id="profile-pic" src="./assets/images/profile.png" alt="Farrell Kimble">
-    
+    <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="#top">Farrell Kimble</a>
+        <nav class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero section-band">
+            <div class="hero-inner">
+                <img class="profile-photo" src="assets/images/profile.png" alt="Farrell Kimble">
+                <p class="eyebrow">Information Systems @ UMBC</p>
+                <h1>Farrell Kimble</h1>
+                <p class="hero-role">Data Analytics | Healthcare Operations | Product Strategy</p>
+                <p class="tool-line">Python &bull; SQL &bull; Power BI &bull; Tableau &bull; Excel</p>
+                <p class="hero-pitch">I build analytics projects that translate operational data into decision-ready metrics, dashboards, and recommendations.</p>
+                <div class="button-row" aria-label="Featured links">
+                    <a class="button primary" href="https://github.com/fkimble/data-science-portfolio" target="_blank" rel="noopener noreferrer">View Data Science Portfolio</a>
+                    <a class="button" href="https://github.com/fkimble" target="_blank" rel="noopener noreferrer">View GitHub</a>
+                    <a class="button" href="https://www.linkedin.com/in/fkimble1/" target="_blank" rel="noopener noreferrer">View LinkedIn</a>
+                    <a class="button" href="assets/Resume_05_2024.pdf" download>Download Resume</a>
                 </div>
-                
-                <div class="hero-content">
-                    <h1>Farrell Kimble</h1>
-                    <h5>Restorative | Empathy | Individualization | Futuristic | Strategic</h5>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">About</p>
+                <h2>Analytics, healthcare operations, and decision support</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-copy">
                     <p>
-                        Driven Information Systems major and Psychology minor with a passion for database analysis, ethical technology solutions, and community impact. Committed to fostering innovation, promoting digital literacy, and leveraging technical expertise to create meaningful change in both professional and community settings.
+                        I am an Information Systems major and Psychology minor at UMBC with an expected graduation of Spring 2026. My work sits at the intersection of data analytics, healthcare operations, product strategy, database systems, and stakeholder communication.
                     </p>
-                    <a href="assets/Resume_05_2024.pdf" download class="download-button">📝 Download Resume</a>
-                    <p>Email: <a href="mailto:fkimble1@umbc.edu">fkimble1@umbc.edu</a></p>
-                    <p>Expected to Graduate: Spring 2026</p>
-                    <p>Baltimore, MD</p>
+                    <p>
+                        As a Data Science &amp; AI Scholar, Teaching Fellow for IS 296: Foundations of Data Science, and Product Strategy Intern at Aledade, I focus on turning messy operational questions into clean metrics, reproducible analysis, dashboard specifications, and recommendations that a team can act on.
+                    </p>
                 </div>
-            </header>
-    
-            <!-- Social Links -->
-            <section class="social-links">
-                <a href="https://shrivercenter.umbc.edu/shriver-living-learning-center/2023-2024-leadership-student-leadership-team/" target="_blank">Shriver Profile</a>
-                <a href="https://www.linkedin.com/in/fkimble1/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/fkimble" target="_blank">GitHub</a>
-                <a href="https://leetcode.com/Fkimble/" target="_blank">LeetCode</a>
-            </section>        
-    
-            <!-- Experience & Qualifications -->
-            <section>
-                <h2>Experience & Qualifications</h2>
-                <ul>
-                    <li>✔ Over 4 years of experience in areas of leadership, community engagement, and academic excellence</li>
-                    <li>✔ Proficient programming in Python, C++, Javascript, and HTML.</li>
-                    <li>✔ Skilled in connecting underrepresented communities to STEM opportunities and resources</li>
-                    <li>✔ Passionate about promoting diversity and fostering collaboration within academic and professional spaces</li>
-                </ul>
-            </section>
-    
-            <!-- Skills -->
-            <section>
-                <h2>Skills</h2>
-                <ul>
-                    
-                    <li>💻 Advanced programming skills in SQL, coupled with strong expertise in database analysis to solve complex, data-driven challenges 💻</li>
-                    <li>📊 Experienced in using Microsoft Access for database organization and analysis 📊</li>
-                    <li>🌐 Strategic in community outreach and event management, fostering inclusivity and engagement to support diversity initiatives in STEM fields  🌐</li>
-                    <li>📸 Expertise in photography and creative storytelling for capturing impactful moments 📸</li>
-                    <li>🧠 Strong foundation in psychological principles to enhance interpersonal and leadership 🧠 skills</li>
-                    <li>🎓 Effective mentor and advocate for underrepresented students in academic and 🎓 professional development</li>
-                </ul>
-            </section>
-    
-            <!-- Work History -->
-            <section>
-                <h2>Work History</h2>
-                <article>
-                    <h3>🖐️Fingerprinting Employee | Biometrics Identity One🖐️</h3>
-                    <p>05/2023 - 08/2023</p>
-                    <ul>
-                        <li>► Conducted detailed biometric fingerprinting for clients, ensuring compliance with privacy regulations and high accuracy in identity verification</li>
-                        <li>► Maintained strict adherence to security protocols, processing over 300 fingerprint scans during the summer term</li>
-                        <li>► Delivered exceptional customer service, streamlining appointment workflows and working with major companies like Waldorf Toyota</li>
-                    </ul>
-                </article>
-    
-                <article>
-                    <h3>🎤 Conference Assistant | University of Maryland, Baltimore County ResLife 🎤</h3>
-                    <p>05/2024 - 08/2024</p>
-                    <ul>
-                        <li>► Provided logistical support for summer conferences, coordinating room assignments and event setups for over 200 attendees</li>
-                        <li>► Collaborated with the ResLife team to ensure smooth operations, addressing guest concerns and resolving issues promptly</li>
-                        <li>► Assisted in managing a detailed inventory of resources to meet the needs of diverse conference groups</li>
-                    </ul>
-                </article>
-    
-                <article>
-                    <h3>💻 Site Coordinator: Creative Coders | University of Maryland, Baltimore County Shriver Center💻</h3>
-                    <p>09/2023 - Present</p>
-                    <ul>
-                        <li>► Supervise and mentor student participants in a coding program designed to enhance their skills in programming and problem-solving</li>
-                        <li>► Develop and implement engaging lesson plans, ensuring students gain hands-on experience with technology and creative projects</li>
-                        <li>► Collaborate with the Shriver Center team to evaluate program success and propose innovative improvements</li>
-                    </ul>
-                </article>
-    
-                <article>
-                    <h3>📚 Desk Assistant | University of Maryland, Baltimore County ResLife 📚</h3>
-                    <p>02/2024 - Present</p>
-                    <ul>
-                        <li>► Serve as a first point of contact for residents, providing information and addressing inquiries in a professional manner</li>
-                        <li>► Manage administrative tasks, including filing, record-keeping, and organizing resources for efficient office operations</li>
-                        <li>► Maintain a welcoming environment for residents while supporting ResLife initiatives and events</li>
-                    </ul>
-                </article>
-    
-                <article>
-                    <h3>📢 UMBC Shriver Productions Manager Intern | University of Maryland, Baltimore County Shriver Center 📢</h3>
-                    <p>09/2024 - Present</p>
-                    <ul>
-                        <li>► Create and distribute engaging marketing content to promote Shriver Center programs and events, driving increased student participation</li>
-                        <li>► Utilize social media platforms and email campaigns to expand program outreach</li>
-                        <li>► Coordinate with team members to align marketing efforts with organizational goals and values</li>
-                    </ul>
-                </article>
-            </section>
-    
-            <!-- Projects & Accomplishments -->
-            <section>
-                <h2>Projects & Accomplishments</h2>
-                <ul>
-                    <li><a href="https://github.com/fkimble">Retail Data Management Database</a></li>
-                    <li><a href="https://github.com/fkimble">Social Media & Censorship</a></li>
-                </ul>
-                <footer>
-                    <p>&copy; 2024 Farrell Kimble</p>
-                </footer>
+                <dl class="quick-facts" aria-label="Quick facts">
+                    <div>
+                        <dt>Current lane</dt>
+                        <dd>Data analytics and healthcare operations</dd>
+                    </div>
+                    <div>
+                        <dt>Academic focus</dt>
+                        <dd>Information Systems, Psychology, Data Science &amp; AI</dd>
+                    </div>
+                    <div>
+                        <dt>Project signal</dt>
+                        <dd>KPI design, validation, SQL/data modeling, dashboards</dd>
+                    </div>
+                </dl>
             </div>
-            </section>
-
-
-
-        <!-- Creative Works Section -->
-        <section id="creative-works" class="creative-outreach-container content-section" style="display: none;">    
-            <h2>Creative Works</h2>
-            <h2>Church Photography</h2>
-            <div class="project">
-                <img src="assets/images/photo.png" style="max-width: 75%; height: auto;">
-                <p>
-                    <strong>Facebook Account:</strong> 
-                    <a href="https://www.facebook.com/abundantgracechapelinternational/photos_by" target="_blank" rel="noopener noreferrer">
-                        Abundant Grace Chapel International (Click here)
-                    </a>
-                </p>
-                <p>
-                    As a photographer for Abundant Grace Chapel International, I had the privilege of capturing key moments during church services, community programs, and special events. 
-                    My photography played a vital role in enhancing the church's social media presence, creating engaging content that resonated with both the congregation and the wider community. 
-                    Through my work, I documented baptisms, choir performances, and outreach activities, each photograph telling a story of connection and faith. These images were often used to promote events and 
-                    share uplifting messages, helping the church reach a broader audience. In addition to taking photos, I contributed to organizing the church's visual media strategy by curating galleries and 
-                    offering input on how to optimize social media posts for greater engagement. This experience not only sharpened my technical skills in photography and editing but also deepened my understanding 
-                    of the power of visual storytelling. I collaborated closely with church leaders to ensure that the content aligned with their mission and values, fostering a sense of trust and shared purpose. 
-                    Being part of this community effort taught me the importance of teamwork and communication in achieving a common goal. Overall, my role as a photographer was a meaningful way to give back to a community 
-                    that has been an integral part of my journey.
-                </p>
-
-            </div>
-                        <!-- Thank You Video -->
-                        <div class="project">
-                            <h2>Digital Story Project</h2>
-                            <img src="assets/images/friends.png" alt="2023-2024 Peer Mentors Posing at Midnight Breakfast" style="max-width: 75%; height: auto;">
-
-                               
-                            </video>
-                            <h2>
-                                <a href="https://drive.google.com/file/d/1FfaUW8DCfzoo2SQbTj1xVGaeuIz2Y6XZ/view?usp=sharing" target="_blank">
-                                    Click here to watch it!
-                                </a>
-                            </h2>
-                            <h3>Context: The photo above is all the 2023-2024 Peer Mentors Posing at Midnight Breakfast!</h3>
-                            <p>
-                                This video, titled "Thank You!", was created as a heartfelt expression of gratitude to my fellow peer mentors, advisors, and the living-learning communities that have significantly 
-                                impacted my academic and personal growth. It highlights key moments and achievements, combining visuals and narration to showcase the journey that shaped who I am today. This project, 
-                                crafted for my SOCY 396 class, also serves as a tribute to the incredible work my Residential Assistant did for my floor during my freshman and sophomore years at university. To capture the video, 
-                                I used a Sony Handycam Camcorder for the phone call sequences, while all the photos were taken using my iPhone 14. I then brought everything together in Adobe Premiere Pro, where I carefully edited 
-                                the footage to align with my creative vision. This project taught me the value of storytelling through visual media and the importance of recognizing those who inspire and uplift others. I also gained 
-                                technical experience in video production and editing, which has further deepened my appreciation for multimedia projects. Ultimately, this video was not just a class assignment but a personal 
-                                expression of gratitude and a reminder of the profound impact supportive communities can have on one's journey.
-                            </p>
-
-                        </div>
-                        <footer>
-                            <p>&copy; 2024 Farrell Kimble</p>
-                        </footer>
         </section>
 
-        <!-- Outreach Section -->
-        <section id="outreach" class="creative-outreach-container content-section" style="display: none;">
-            
-            <h2>Outreach</h2>
-            <div class="project">
-                <h2>UMBC Photography Club</h2>
-                <img src="assets/images/umbc_photo.png" alt="UMBC Photography" style="max-width: 100%; height: auto;">
-                <p>
-                    <strong>Instagram Account:</strong> 
-                    <a href="https://www.instagram.com/umbcphotoclub/" target="_blank" rel="noopener noreferrer">@umbcphotoclub(Click Here)</a>
-                </p>
-                <p>
-                    As an active member of the UMBC Photography Club, I capture significant campus events, contributing to the club's goal of showcasing student life and building a strong online presence. My photography not only documents moments but also helps 
-                    share stories that resonate with the UMBC community. I collaborate with other club members to plan photo shoots and engage in creative projects that promote a sense of unity. If you're interested in getting involved, feel free to 
-                    reach out through our Instagram account or attend one of our meetings to learn more about our upcoming events and activities.
+        <section id="projects" class="section alt-section">
+            <div class="section-heading">
+                <p class="eyebrow">Featured Analytics Projects</p>
+                <h2>Decision-support work recruiters can inspect</h2>
+                <p class="section-intro">
+                    These projects are organized around the analyst workflow: define the decision, validate the data, build useful metrics, and package findings for stakeholders.
                 </p>
             </div>
-            <!-- STARS -->
-            <div class="project">
-                <h2>STARS Computing Corps | UMBC Chapter</h2>
-                <img src="assets/images/stars.png" alt="STARS Logo" style="max-width: 75%; height: auto;">
-                <p>
-                    <strong>Instagram Account:</strong> 
-                    <a href="https://www.instagram.com/starsatumbc/" target="_blank" rel="noopener noreferrer">@starsatumbc(Click Here)</a>
-                </p>
-                <p>
-                    As a member of the STARS Computing Corps at UMBC, I actively contribute to initiatives that encourage underrepresented students to pursue careers in STEM fields. Our team organizes outreach programs, workshops, and 
-                    mentoring opportunities to inspire young minds and foster a supportive community. Being part of STARS has allowed me to network with like-minded peers and gain leadership experience. To become a part of our movement or to find out more, 
-                    follow us on Instagram or join us at one of our events to see firsthand the impact we make.
-                </p>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="card-topline">Healthcare operations | KPI design</div>
+                    <h3>CareRoute Equity Lab</h3>
+                    <p>Synthetic specialty-referral access analytics project identifying referral leakage, wait-time drift, equity gaps, and ranked operational interventions.</p>
+                    <p class="tools">Python, pandas, validation, healthcare access analytics, executive reporting</p>
+                    <a href="https://github.com/fkimble/data-science-portfolio/tree/main/care-route-equity-lab" target="_blank" rel="noopener noreferrer">View project</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-topline">Healthcare analytics | Data validation</div>
+                    <h3>ClaimFlow Parity Lab</h3>
+                    <p>Synthetic prior-authorization and claims-denial analytics project detecting denial drift, access-parity gaps, reimbursement at risk, and operational interventions.</p>
+                    <p class="tools">Python, pandas, tests, KPI design, parity analysis, executive reporting</p>
+                    <a href="https://github.com/fkimble/data-science-portfolio/tree/main/claimflow-parity-lab" target="_blank" rel="noopener noreferrer">View project</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-topline">SQL/data modeling | Migration controls</div>
+                    <h3>Audio Storage System Migration</h3>
+                    <p>Access-to-Oracle migration simulation with normalized schema design, row-level controls, reconciliation SQL, and storage-tier cost review.</p>
+                    <p class="tools">SQL, Oracle-style schema design, 3NF, control totals, data quality</p>
+                    <a href="https://github.com/fkimble/data-science-portfolio/tree/main/audio-storage-system-migration" target="_blank" rel="noopener noreferrer">View project</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-topline">Public-sector analytics | Dashboard specs</div>
+                    <h3>Emissions Decision Support System</h3>
+                    <p>Maryland county emissions analysis with county and sector standardization, emissions intensity metrics, priority ranking, and Power BI dashboard specifications.</p>
+                    <p class="tools">Python, KPI normalization, Power BI specs, metric dictionaries, recommendations</p>
+                    <a href="https://github.com/fkimble/data-science-portfolio/tree/main/emissions-decision-support-system" target="_blank" rel="noopener noreferrer">View project</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-topline">Civic analytics | Policy-safe reporting</div>
+                    <h3>Incarceration Trends Maryland</h3>
+                    <p>Synthetic Maryland incarceration and recidivism analysis framed as a reentry analytics brief with county ranking, risk-index definitions, and policy guardrails.</p>
+                    <p class="tools">Python, risk segmentation, correlation guardrails, policy brief, executive communication</p>
+                    <a href="https://github.com/fkimble/data-science-portfolio/tree/main/incarceration-trends-maryland" target="_blank" rel="noopener noreferrer">View project</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-topline">Product thinking | SQL/backend logic</div>
+                    <h3>Orbit</h3>
+                    <p>Campus parking decision and sharing platform recognized with 1st Place Idea &amp; Innovation recognition, with contributions around SQL, backend, and data logic.</p>
+                    <p class="tools">Product strategy, SQL/backend logic, operations workflow, decision support</p>
+                    <a href="https://github.com/fkimble/data-science-portfolio" target="_blank" rel="noopener noreferrer">View analytics portfolio</a>
+                </article>
             </div>
-            <!-- NSBE -->
-            <div class="project">
-                <h2>National Society of Black Engineers (NSBE) | UMBC Chapter</h2>
-                <img src="assets/images/nsbe.png" alt="NSBE Logo" style="max-width: 75%; height: auto;">
-                <p>
-                    <strong>Instagram Account:</strong> 
-                    <a href="https://www.instagram.com/nsbe_umbc/" target="_blank" rel="noopener noreferrer">@nsbe_umbc(Click Here)</a>
-                </p>
-                <p>
-                    In my role as the past Membership Chair for the National Society of Black Engineers (NSBE), I worked diligently to cultivate an inclusive and welcoming environment for Black engineers and STEM students at UMBC. NSBE offers a variety of events, workshops, 
-                    and networking sessions that empower members and build professional skills. I also collaborated with other organizations to increase awareness and participation in STEM-focused activities. Our initiatives foster a supportive space where members can 
-                    share experiences and grow together. To stay updated on future events and opportunities, follow us on Instagram or attend one of our general body meetings.
-                </p>
-            </div>
-            <!-- Shriver Center -->
-            <div class="project">
-                <h2>Shriver Center</h2>
-                <img src="assets/images/shriver.png" alt="Shriver Center Logo" style="max-width: 75%; height: auto;">
-                <p>
-                    <strong>Instagram Account:</strong> 
-                    <a href="https://www.instagram.com/shriver_umbc/" target="_blank" rel="noopener noreferrer">@shriver_umbc(Click Here)</a>
-                </p>
-                <p>
-                    As a peer mentor in the Shriver Living-Learning Community, I guided students in their civic engagement and service-learning activities, helping them discover their passion for community involvement. 
-                    The Shriver Center plays an essential role in connecting students with service opportunities that promote social change and personal growth. Through my mentorship, I aimed to empower students to take initiative and contribute meaningfully to the community. 
-                    It was rewarding to witness students develop their skills and confidence as they engaged in various projects. The Shriver Center's UMBC account serves as a platform to promote their mission and activities, reaching both on-campus and off-campus audiences. 
-                    By sharing updates, stories, and event highlights, the account encourages students and community members to get involved and take advantage of the opportunities available. 
-                    To learn more about upcoming activities or how to get involved, visit our Instagram or reach out directly to the Shriver Center for more information.
-                </p>
-            </div>
-            <footer>
-                <p>&copy; 2024 Farrell Kimble</p>
-            </footer>
         </section>
-    </div>
 
-    <!-- JavaScript for navigation -->
-    <script>
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('.content-section');
-            sections.forEach(section => {
-                section.style.display = 'none';
-            });
+        <section id="experience" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Experience</p>
+                <h2>Analytics, systems, and stakeholder support</h2>
+            </div>
 
-            document.getElementById(sectionId).style.display = 'block';
+            <div class="timeline">
+                <article class="experience-item">
+                    <div>
+                        <h3>Product Strategy Intern</h3>
+                        <p class="meta">Aledade | Summer 2026</p>
+                    </div>
+                    <ul>
+                        <li>Apply data, product thinking, research, and operational problem-solving in a healthcare technology environment.</li>
+                        <li>Focus on healthcare operations, product strategy, and analysis that can support clearer stakeholder decisions.</li>
+                    </ul>
+                </article>
 
-            // Update tab button styles
-            const buttons = document.querySelectorAll('.tablinks');
-            buttons.forEach(button => {
-                button.classList.remove('active');
-            });
+                <article class="experience-item">
+                    <div>
+                        <h3>Teaching Fellow, IS 296: Foundations of Data Science</h3>
+                        <p class="meta">UMBC Department of Information Systems</p>
+                    </div>
+                    <ul>
+                        <li>Support Python-based analytics instruction with emphasis on data cleaning, exploratory analysis, and reproducible workflows.</li>
+                        <li>Review student work for data quality, documentation, interpretation, and analytical clarity.</li>
+                    </ul>
+                </article>
 
-            // Activate the clicked tab
-            document.querySelector(`.tablinks[onclick="showSection('${sectionId}')"]`).classList.add('active');
-        }
-    </script>
+                <article class="experience-item">
+                    <div>
+                        <h3>Shriver Community Engaged Leader Student Intern</h3>
+                        <p class="meta">UMBC Shriver Center</p>
+                    </div>
+                    <ul>
+                        <li>Coordinate community-engaged projects with attention to schedules, partner communication, and student support.</li>
+                        <li>Translate program needs into organized plans, clear updates, and follow-through across teams.</li>
+                    </ul>
+                </article>
+
+                <article class="experience-item">
+                    <div>
+                        <h3>AI Sense Undergraduate Research Intern</h3>
+                        <p class="meta">UMBC research experience</p>
+                    </div>
+                    <ul>
+                        <li>Contribute to AI-enabled sensing research through data collection, system testing, and iterative refinement.</li>
+                        <li>Support demos and technical communication for mixed technical and nontechnical audiences.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section alt-section">
+            <div class="section-heading">
+                <p class="eyebrow">Skills</p>
+                <h2>Toolkit for analytics and decision support</h2>
+            </div>
+
+            <div class="skill-grid">
+                <article class="skill-card">
+                    <h3>Analytics and Programming</h3>
+                    <p>Python, pandas, SQL, Excel, data cleaning, exploratory analysis, trend analysis</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Business Intelligence</h3>
+                    <p>Power BI, Tableau, KPI reporting, dashboard specifications, analytics storytelling</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Data Systems</h3>
+                    <p>Database design, data validation, migration controls, reconciliation, metric dictionaries</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Healthcare and Product</h3>
+                    <p>Healthcare operations analytics, product strategy, stakeholder support, decision-support systems</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="leadership" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Leadership &amp; Community</p>
+                <h2>Community work that supports the technical story</h2>
+            </div>
+
+            <div class="split-list">
+                <article>
+                    <h3>Creative Coders Site Coordinator</h3>
+                    <p>Connect volunteers with a service site focused on K-12 programming, robotics, and digital literacy support.</p>
+                </article>
+                <article>
+                    <h3>STARS Computing Corps</h3>
+                    <p>Support outreach and representation in computing through student leadership, collaboration, and campus engagement.</p>
+                </article>
+                <article>
+                    <h3>NSBE and campus organizations</h3>
+                    <p>Contribute to inclusive STEM spaces through membership, communication, and student-centered programming.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="creative" class="section alt-section">
+            <div class="section-heading">
+                <p class="eyebrow">Creative Work / Photography</p>
+                <h2>Visual storytelling, kept in support of the professional brand</h2>
+            </div>
+
+            <div class="creative-grid">
+                <article class="creative-item">
+                    <img src="assets/images/umbc_photo.png" alt="UMBC Photography Club visual">
+                    <div>
+                        <h3>UMBC Photography Club</h3>
+                        <p>Campus photography and event storytelling for UMBC student life.</p>
+                        <a href="https://www.instagram.com/umbcphotoclub/" target="_blank" rel="noopener noreferrer">View club page</a>
+                    </div>
+                </article>
+                <article class="creative-item">
+                    <img src="assets/images/photo.png" alt="Church photography sample">
+                    <div>
+                        <h3>Church Photography</h3>
+                        <p>Community event photography for Abundant Grace Chapel International.</p>
+                        <a href="https://www.facebook.com/abundantgracechapelinternational/photos_by" target="_blank" rel="noopener noreferrer">View photography page</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-heading">
+                <p class="eyebrow">Contact</p>
+                <h2>Let us connect around analytics, healthcare operations, or product strategy</h2>
+            </div>
+            <div class="contact-links">
+                <a href="mailto:fkimble1@umbc.edu">fkimble1@umbc.edu</a>
+                <a href="https://www.linkedin.com/in/fkimble1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/fkimble" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/fkimble/data-science-portfolio" target="_blank" rel="noopener noreferrer">Data Science Portfolio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Farrell Kimble. Built as a focused analytics portfolio.</p>
+    </footer>
 </body>
 </html>

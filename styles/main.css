@@ -1,18 +1,20 @@
 :root {
-    --black: #050505;
-    --charcoal: #141414;
-    --charcoal-soft: #202020;
-    --gold: #fdb515;
-    --gold-deep: #9a6f00;
-    --gold-soft: #fff2bd;
-    --paper: #fffaf0;
+    --black: #123332;
+    --charcoal: #17423f;
+    --charcoal-soft: #1f514d;
+    --gold: #2dd4bf;
+    --gold-deep: #0f766e;
+    --gold-soft: #d7ffef;
+    --accent: #e76f51;
+    --accent-soft: #fff0ea;
+    --paper: #f6fbfb;
     --surface: #ffffff;
-    --surface-soft: #f7f0dc;
-    --ink: #161616;
-    --muted: #665f4d;
-    --line: #e8d8a1;
-    --shadow: 0 22px 55px rgba(5, 5, 5, 0.14);
-    --shadow-strong: 0 28px 70px rgba(5, 5, 5, 0.24);
+    --surface-soft: #e8faf8;
+    --ink: #17201f;
+    --muted: #5d6f6c;
+    --line: #c9e7e4;
+    --shadow: 0 22px 55px rgba(18, 51, 50, 0.14);
+    --shadow-strong: 0 28px 70px rgba(18, 51, 50, 0.24);
 }
 
 * {
@@ -27,8 +29,8 @@ body {
     margin: 0;
     color: var(--ink);
     background:
-        linear-gradient(90deg, rgba(253, 181, 21, 0.06) 1px, transparent 1px),
-        linear-gradient(0deg, rgba(253, 181, 21, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15, 118, 110, 0.06) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(231, 111, 81, 0.045) 1px, transparent 1px),
         var(--paper);
     background-size: 72px 72px;
     font-family: Arial, Helvetica, sans-serif;
@@ -63,9 +65,9 @@ a:focus-visible {
     gap: 1rem;
     width: 100%;
     padding: 1rem clamp(1rem, 4vw, 4rem);
-    background: rgba(5, 5, 5, 0.94);
+    background: rgba(18, 51, 50, 0.94);
     border-bottom: 3px solid var(--gold);
-    box-shadow: 0 10px 30px rgba(5, 5, 5, 0.2);
+    box-shadow: 0 10px 30px rgba(18, 51, 50, 0.2);
     backdrop-filter: blur(14px);
 }
 
@@ -112,7 +114,8 @@ a:focus-visible {
     content: "";
     opacity: 0.28;
     background:
-        linear-gradient(135deg, transparent 0 46%, rgba(253, 181, 21, 0.32) 47% 53%, transparent 54% 100%),
+        linear-gradient(135deg, transparent 0 46%, rgba(45, 212, 191, 0.3) 47% 53%, transparent 54% 100%),
+        linear-gradient(25deg, transparent 0 58%, rgba(231, 111, 81, 0.16) 59% 62%, transparent 63% 100%),
         linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
     background-size: 34px 34px, 88px 88px;
 }
@@ -124,7 +127,7 @@ a:focus-visible {
     width: min(420px, 70vw);
     height: 8px;
     content: "";
-    background: var(--gold);
+    background: linear-gradient(90deg, var(--gold), var(--accent));
 }
 
 .hero-inner {
@@ -142,7 +145,7 @@ a:focus-visible {
     object-fit: cover;
     border: 5px solid var(--gold);
     border-radius: 50%;
-    box-shadow: 0 0 0 8px rgba(253, 181, 21, 0.12), var(--shadow-strong);
+    box-shadow: 0 0 0 8px rgba(45, 212, 191, 0.12), var(--shadow-strong);
 }
 
 .eyebrow {
@@ -206,7 +209,7 @@ h3 {
 .hero-pitch {
     width: min(760px, 100%);
     margin: 0 auto 1.4rem;
-    color: #f7edd0;
+    color: #ecfffb;
     font-size: clamp(1.05rem, 2.5vw, 1.25rem);
 }
 
@@ -225,8 +228,8 @@ h3 {
     min-height: 2.25rem;
     padding: 0.45rem 0.75rem;
     color: var(--gold-soft);
-    background: rgba(253, 181, 21, 0.1);
-    border: 1px solid rgba(253, 181, 21, 0.42);
+    background: rgba(45, 212, 191, 0.1);
+    border: 1px solid rgba(45, 212, 191, 0.42);
     border-radius: 999px;
     font-size: 0.86rem;
     font-weight: 800;
@@ -247,7 +250,7 @@ h3 {
     padding: 0.78rem 1rem;
     color: #ffffff;
     background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(253, 181, 21, 0.55);
+    border: 1px solid rgba(45, 212, 191, 0.55);
     border-radius: 8px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
     transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
@@ -255,15 +258,15 @@ h3 {
 
 .button.primary {
     color: var(--black);
-    background: var(--gold);
+    background: linear-gradient(135deg, var(--gold), #7dd3c7);
     border-color: var(--gold);
 }
 
 .button:hover,
 .button:focus-visible {
     color: var(--black);
-    background: var(--gold-soft);
-    border-color: var(--gold-soft);
+    background: var(--accent-soft);
+    border-color: var(--accent);
     text-decoration: none;
     transform: translateY(-2px);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
@@ -314,7 +317,7 @@ h3 {
 .alt-section .project-card p,
 .alt-section .skill-card p,
 .alt-section .creative-item p {
-    color: #d8ceb4;
+    color: #cce7e3;
 }
 
 .about-grid {
@@ -326,7 +329,7 @@ h3 {
 
 .about-copy {
     padding-left: 1.25rem;
-    border-left: 5px solid var(--gold);
+    border-left: 5px solid var(--accent);
     font-size: 1.05rem;
 }
 
@@ -367,7 +370,7 @@ h3 {
     width: 6px;
     height: 100%;
     content: "";
-    background: var(--gold);
+    background: linear-gradient(180deg, var(--gold), var(--accent));
 }
 
 .quick-facts dt {
@@ -404,7 +407,7 @@ h3 {
 .alt-section .skill-card,
 .alt-section .creative-item {
     background: linear-gradient(180deg, var(--charcoal-soft), var(--charcoal));
-    border-color: rgba(253, 181, 21, 0.34);
+    border-color: rgba(45, 212, 191, 0.34);
     box-shadow: 0 24px 55px rgba(0, 0, 0, 0.34);
 }
 
@@ -429,9 +432,9 @@ h3 {
     margin: 0 0 1rem;
     overflow: hidden;
     background:
-        linear-gradient(135deg, rgba(253, 181, 21, 0.18), rgba(255, 255, 255, 0.04)),
+        linear-gradient(135deg, rgba(45, 212, 191, 0.18), rgba(231, 111, 81, 0.1)),
         var(--charcoal);
-    border: 1px solid rgba(253, 181, 21, 0.35);
+    border: 1px solid rgba(45, 212, 191, 0.35);
     border-radius: 8px;
 }
 
@@ -453,22 +456,9 @@ h3 {
     object-fit: contain;
 }
 
-.project-visual-logo {
-    display: grid;
-    place-items: center;
-}
-
-.project-visual-logo img {
-    position: static;
-    width: 72px;
-    height: 72px;
-    object-fit: contain;
-    filter: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.36));
-}
-
 .card-topline {
     margin-bottom: 0.85rem;
-    color: var(--gold);
+    color: var(--accent);
     font-size: 0.78rem;
     font-weight: 900;
     letter-spacing: 0.06rem;
@@ -585,7 +575,7 @@ h3 {
     min-height: 2.6rem;
     padding: 0.58rem 0.85rem;
     color: var(--gold);
-    border: 1px solid rgba(253, 181, 21, 0.42);
+    border: 1px solid rgba(45, 212, 191, 0.42);
     border-radius: 999px;
 }
 
@@ -601,7 +591,7 @@ h3 {
     color: var(--gold-soft);
     text-align: center;
     background: var(--black);
-    border-top: 1px solid rgba(253, 181, 21, 0.35);
+    border-top: 1px solid rgba(45, 212, 191, 0.35);
 }
 
 .site-footer p {

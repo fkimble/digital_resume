@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Civic trends analytics visual</title>
+  <desc id="desc">A generic civic analytics visual showing a trend chart, county priority list, and interpretation guardrails.</desc>
+  <rect width="960" height="540" fill="#f6fbfb"/>
+  <rect x="70" y="70" width="820" height="400" rx="34" fill="#ffffff" stroke="#c9e7e4" stroke-width="4"/>
+  <text x="124" y="130" fill="#123332" font-family="Arial, sans-serif" font-size="34" font-weight="700">Civic Trends Analytics</text>
+  <rect x="122" y="166" width="426" height="236" rx="24" fill="#f2f7f6" stroke="#d5e6e4" stroke-width="3"/>
+  <path d="M166 342h322" stroke="#c8d8d6" stroke-width="4"/>
+  <path d="M166 210v132" stroke="#c8d8d6" stroke-width="4"/>
+  <path d="M176 316c46-28 76-52 116-42 42 10 62-44 100-34 38 10 58-28 92-44" fill="none" stroke="#0f766e" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="176" cy="316" r="9" fill="#e76f51"/>
+  <circle cx="292" cy="274" r="9" fill="#e76f51"/>
+  <circle cx="392" cy="240" r="9" fill="#e76f51"/>
+  <circle cx="484" cy="196" r="9" fill="#e76f51"/>
+  <rect x="584" y="166" width="236" height="236" rx="24" fill="#123332"/>
+  <text x="702" y="214" text-anchor="middle" fill="#a7f3d0" font-family="Arial, sans-serif" font-size="24" font-weight="700">Priority Index</text>
+  <g font-family="Arial, sans-serif" font-size="22" font-weight="700">
+    <rect x="628" y="252" width="146" height="18" rx="9" fill="#2dd4bf"/>
+    <text x="612" y="270" text-anchor="end" fill="#ffffff">A</text>
+    <rect x="628" y="300" width="106" height="18" rx="9" fill="#e76f51"/>
+    <text x="612" y="318" text-anchor="end" fill="#ffffff">B</text>
+    <rect x="628" y="348" width="72" height="18" rx="9" fill="#f4b183"/>
+    <text x="612" y="366" text-anchor="end" fill="#ffffff">C</text>
+  </g>
+  <rect x="124" y="424" width="696" height="20" rx="10" fill="#e8faf8"/>
+  <rect x="124" y="424" width="268" height="20" rx="10" fill="#0f766e"/>
+  <text x="480" y="438" text-anchor="middle" fill="#51615f" font-family="Arial, sans-serif" font-size="24">Risk segmentation, policy guardrails, and executive communication</text>
+</svg>

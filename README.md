@@ -1,6 +1,6 @@
 # Farrell Kimble Digital Resume
 
-Static GitHub Pages portfolio for Farrell Kimble, focused on data analytics, healthcare operations analytics, product strategy, and decision-support systems.
+Static GitHub Pages portfolio for Farrell Kimble, a UMBC Information Systems graduate with a Psychology minor and Business Analytics Certificate, focused on data analytics, healthcare operations analytics, product strategy, and decision-support systems.
 
 Live site: <https://fkimble.github.io/digital_resume/>
 
